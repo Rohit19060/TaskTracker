@@ -7,8 +7,8 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home isHistory={false} />} />
         <Route path="/history" element={<Home isHistory={true} />} />
+        <Route path="*" element={<Home isHistory={false} />} />
       </Routes>
     </Router>
   );
