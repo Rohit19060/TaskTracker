@@ -3,7 +3,7 @@ export interface Task {
   title: string;
   description: string;
   priority: 'critical' | 'warning' | 'normal';
-  status: 'not started' | 'in progress' | 'done';
+  status: TaskStatus;
   dateCreated: string;
   dateCompleted?: string;
 }
